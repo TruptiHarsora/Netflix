@@ -6,23 +6,18 @@
 body{
     background-color: black;
     color:white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;;
 }
 .nav{
-    // width: 100%;
-    // position: absolute;
-    // top: 0;
-    // display: flex;
-    // justify-content: space-between;
     position: absolute;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 3% 10%;
+    padding: 3% 5%;
     z-index: 10;
-    border: 5px solid black;
-    gap:2rem;
+    // border: 5px solid black;
+     gap:2rem;
 
         .nav_logo{
         height: 100%;
@@ -30,7 +25,7 @@ body{
         }
         .logo{
             height: 100%;
-            width: 200px;
+            width: 100px;
         }
 
         .nav_items{
@@ -42,7 +37,7 @@ body{
             border: 1px solid white;
             padding: 0.5rem;
             color:white;
-            
+            background: rgba(0, 0, 0, 0.4);
             // justify-content: center;
             // align-items: center;
         }
@@ -58,7 +53,18 @@ body{
             justify-content: center;
             align-items: center;
         }
+        .lang__drop__down {
+            background: transparent;
+            border: none;
+            color: white;
+            }
+        .lang__drop__down:focus{
+            outline: none;
+        }
 
+        .lang__drop__down option{
+            background-color: black;;
+        }
         select{
             background-color: rgba(0, 0, 0, 0.4);
             // border-radius: 10px;
@@ -82,3 +88,108 @@ body{
        
     }
 
+//hero img
+.hero_container{
+    width: 100%;
+    height: 100vh;
+}
+.hero_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero_overlay{
+    position: absolute;
+    inset: 0;
+    height: 100%;  
+    width: 100%;;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.hero_heading{
+    // width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    //z-index: 2; /* make sure it's above overlay */
+    // padding: 0 20px; /* optional for small screens */
+
+    .hero_title {
+        font-size: 2.7rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }   
+
+    .hero_subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    }
+
+    .hero_description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    //   max-width: 700px;
+    }
+
+   
+
+}
+
+ .email_container{
+    width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:1px;
+    }
+    .form_container{
+        background-color: white;
+        width: 90%;
+        height: 50px;
+        position: relative;
+        
+    }
+    .email_input{
+        border: none;
+        background:transparent;
+        width: 100%;
+        height: 100%;
+        padding-left: 7px;
+    }
+    .email_lable{
+        color: black;
+        position: absolute;
+        top:25%;
+        left:5%;
+        color: gray;
+        transition: 0.5s;
+    }
+    .email_button{
+        background-color:#dc030f;
+        border-radius: 1px;
+        border:1px solid #dc030f;
+        color: white;
+        // padding: 0.8rem 1.2rem;
+        font-size: 15px;
+        letter-spacing: 1px;
+        // display: flex;
+        // flex-direction: row;
+        width: 30%;
+        height: 100%;
+    }
