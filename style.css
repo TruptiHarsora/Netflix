@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 10%;
+  z-index: 10;
+  border: 5px solid black;
+  gap: 2rem;
+}
+.nav .nav_logo {
+  height: 100%;
+  width: 100%;
+}
+.nav .logo {
+  height: 100%;
+  width: 200px;
+}
+.nav .nav_items {
+  display: flex;
+}
+.nav .drop_down_container {
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 0.5rem;
+  color: white;
+}
+.nav .drop_down_lang {
+  background-color: transparent;
+  border: none;
+  font-size: large;
+}
+.nav .drop_down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav select {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 0.5rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+}
+.nav .sign_in {
+  background-color: rgb(168, 5, 5);
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 5rem;
+}/*# sourceMappingURL=style.css.map */
