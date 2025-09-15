@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" href="./images/netflix_PNG.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -23,7 +27,7 @@
                     <div class=drop_down_container>
                         <div class="drop_down">
                         <i class="fa-solid fa-language" style="color: #ffffff;"></i>
-                        <select name="language" id="language">
+                        <select class="lang__drop__down" name="language" id="language">
                         <option>English</option>
                         <option>Hindi</option>
                     </select>
@@ -35,16 +39,38 @@
                         <button class="sign_in" value="sign_in">Sign In</button>
                     </div> 
                     
-                    
                 </div>
             </div>
         </section>
-        <section id="home">
-            <div class="hero">
-                <div class="container">
+        <section class="hero">
+            <div class="hero_container">
+                <img class="hero_img" src="./images/netflix_hero_img.jpg" alt="bg hero img">
+             </div>
+            <div class="hero_overlay"></div>
 
+            <div class="hero_heading">
+                <h1 class="hero_title"> Unlimited Movies TV,<br />
+            Shows and More.</h1>
+                <h2 class="hero_subtitle">Watch anywhere and cancel anytime.</h2>
+                <p class="hero_description">
+                    Ready to watch? Enter your email to create or restart your
+                    membership.
+                </p>
+
+                <div class="email_container">
+                    <div class="form_container">
+                        <input type="email" class="email_input" name="email" id="email">
+                        <label for="email" class="email_lable">Email Address</label>
+                    </div>
+                    <button class="email_button"> 
+                            Get Started <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
-            </div>
+            </div> 
+
+            
+
+
         </section>
     </header>
     <main>
