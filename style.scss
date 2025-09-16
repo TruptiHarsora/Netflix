@@ -282,7 +282,7 @@ body{
             top:1rem;
             width: 110%;
             height: 100px; /* Height of the curve */
-            border: 3px solid white;
+            // border: 3px solid white;
             // box-shadow: -1px 1px 14px 1px blue, -11px -9px 12px 0px purple;
             box-shadow: -1px 1px 14px 6px blue, -11px -9px 12px 1px purple;
             background-color: black;
@@ -307,11 +307,12 @@ body{
        
             .trend_container{
                 // border: 2px solid white;
+               
                 box-shadow: 0 0 15px 5px rgb(136, 4, 4);
                 border-radius: 30px;
                 // gap:50px;
                 padding: 40px;
-                width: 82%;
+                width: 76%;
                 // margin-left: 10px;
                 // height: auto;
 
