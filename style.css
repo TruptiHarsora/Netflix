@@ -235,7 +235,6 @@ body {
   top: 1rem;
   width: 110%;
   height: 100px; /* Height of the curve */
-  border: 3px solid white;
   box-shadow: -1px 1px 14px 6px blue, -11px -9px 12px 1px purple;
   background-color: black;
   border-top-left-radius: 50%;
@@ -254,7 +253,7 @@ body {
   box-shadow: 0 0 15px 5px rgb(136, 4, 4);
   border-radius: 30px;
   padding: 40px;
-  width: 70%;
+  width: 76%;
 }
 .trend .trend_container .box {
   border: 2px solid rgb(99, 96, 96);
