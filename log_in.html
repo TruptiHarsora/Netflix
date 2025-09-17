@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="icon" href="./images/netflix_PNG.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+<body>
+    <header>
+        <section>
+            <div class="nav">
+               
+                     <div class="nav_logo">
+                         <div class="nav_items">
+                              <img class="logo" src="./images/logo.png" alt="Netflix" >
+                         </div>
+                  
+                </div>
+               
+                <div class="nav_items">
+                    <div class=drop_down_container>
+                        <div class="drop_down">
+                        <i class="fa-solid fa-language" style="color: #ffffff;"></i>
+                        <select class="lang__drop__down" name="language" id="language">
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                    </div>
+                    
+                    </div>
+                </div>
+                    <div class="nav_items">
+                        <button class="sign_in" value="sign_in">Sign In</button>
+                    </div> 
+                    
+                </div>
+            </div>
+        </section>
+    </header>
+        <section class="hero">
+            <div class="hero_container">
+                <img class="hero_img" src="./images/netflix_hero_img.jpg" alt="bg hero img">
+             </div>
+            <div class="hero_overlay"></div>
+
+            <div class="login_heading">
+                <div class="login_container">
+                    <input type="text" class="input" name="username" id="username">
+                        <label for="username" class="lable_user">Username / Email Id</label>
+                        <input type="password" class="input" name="password" id="password">
+                        <label for="password" class="lable_pwd">Password</label>
+                         <button class="login_button"> 
+                           Log In <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    
+                   
+                </div>
+            </div> 
+
+        </section>
+
+         
+    
+    <footer class="footer">
+        <section>
+        </br></br>
+            <p>Questions? Call 000-800-919-1694</p>
+            <div class="footer-cols">
+            <ul>
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Privacy</li>
+                <li>Speed Test</li>
+            </ul>
+            <ul>
+                <li>Help Center</li>
+                <li>Jobs</li>
+                <li>Cookie Preferences</li>
+                <li>Legal Notices</li>
+            </ul>
+            <ul>
+                <li>Account</li>
+                <li>Ways to Watch</li>
+                <li>Corporate Information</li>
+                <li>Only on Netflix</li>
+            </ul>
+            <ul>
+                <li>Media Centre</li>
+                <li>Terms of Use</li>
+                <li>Contact Use</li>
+                <li>Speed Test</li>
+            </ul>
+            </div>
+        </section>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop:true,
+    // center:true,
+    //margin:5,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    //nav:true,
+     items:3,
+    responsive:{
+         0:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+        
+    },
+  });
+
+ 
+});
+</script>
+</html>
