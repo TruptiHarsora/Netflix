@@ -413,97 +413,135 @@ body{
 //Login Form
 
 .login_heading{
-     width: 30%;
-    height: 60%;
-    border:5px solid white;
+    //  width: 26%;
+    // height: 63%;
+
+    width: 500px;
+    height: 600px;
+    // border:5px solid white;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 33%;
+    // transform: translate(-50%, -50%);
     text-align: center;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: #222222d7;
-    //z-index: 2; /* make sure it's above overlay */
-    // padding: 0 20px; /* optional for small screens */
-
-    // .login_title {
-    //     font-size: 2.7rem;
-    //     font-weight: 600;
-    //     line-height: 1.5;
-    // }   
-
-    // .login_subtitle {
-    // font-size: 1.5rem;
-    // font-weight: 400;
-    // }
-
-    // .login_description {
-    // font-size: 1.2rem;
-    // font-weight: 400;
-    // //   max-width: 700px;
-    // }
-
+    background-color: #000000ac;
+    
+    h1{
+        align-self: flex-start;
+    }
     .login_container{
-         height: 50%;
-         width: 100%;
+        height: auto;
+        width: 80%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
-        gap:20px;
+        gap:15px;
         padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        // border: 2px solid white;
+        
     }
     .input{
-         border: 1px solid gray;
+        border: 1px solid gray;
         background:transparent;
         width: 100%;
-        height: 100%;
+        height: 60px;
         padding-left: 7px;
-        
+        caret-color:white;
+        color:white;
+        border-radius: 5px;
     }
     .lable_user,.lable_pwd {
         color: black;
         position: absolute;
-        color: #ffffff;
+        color: #8d8b8b;
         transition: 0.3s;
+        font-size: 16px;
     }
     .lable_user {
-        top:7%;
-        left:8%;
+        top:19%;
+        left:17%;
     }
      .lable_pwd{ 
-        top:22%;
-        left:8%;
+        top:31%;
+        left:17%;
     }
     .input:focus + .lable_user {
-        top: 4.5%;
-        left: 25px;
-        font-size: 14px;
+        top: 16.5%;
+        left: 16%;
+        font-size: 13px;
         
     }
 
      .input:focus + .lable_pwd {
-        top: 19.5%;
-        left: 25px;
+        top: 29%;
+        left: 16%;
         font-size: 14px;
        
     }
-    .login_button{
+  
+    .button{
+         color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        font-weight: bolder;
+    }
+    .login_btn{
         background-color:#dc030f;
         border-radius: 1px;
         border:1px solid #dc030f;
-        color: white;
-        // padding: 0.8rem 1.2rem;
+       
+    }
+    .user_signin_btn{
+        background-color:#444242c5;
+        border-radius: 1px;
+        border:1px solid #444242c5;
+    }
+
+     .login_btn:hover{
+        background-color:#a6010a;
+        border-radius: 1px;
+        border:1px solid #a6010a;
+       
+    }
+    .user_signin_btn:hover{
+        background-color:#383636c5;
+        border-radius: 1px;
+        border:1px solid #383636c5;
+    }
+
+
+   .div{
+        color:white;
         font-size: 15px;
-        letter-spacing: 1px;
-        // display: flex;
-        // flex-direction: row;
-        width: 30%;
-        height: 100%;
+        text-align: left;
+        line-height: 3;
+
+        a{
+            color:white;
+        }
+        #forgot_pwd{
+            margin-left: 35%;
+        }
+        #sign_up{
+            text-decoration: none;
+        }
+        #Learn_more{
+            color:blue;
+        }
+        p{
+            line-height: 1;
+            color: #999;
+        }
     }
 }
 
